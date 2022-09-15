@@ -1,1 +1,8 @@
-aaaa
+server {
+    listen       80;
+       server_name  18.143.106.93;
+       location / {
+          root   /var/www/html/TeaProject/demo;
+          home  home.html home.html;
+                }
+        }
