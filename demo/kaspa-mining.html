@@ -8,501 +8,551 @@
 * Licensed under MIT (https://github.com/tabler/tabler/blob/master/LICENSE)
 -->
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
-    <title>home-cnprospecting</title>
-    
-    <style>
-      @import url('https://rsms.me/inter/inter.css');
-      :root {
-      	--tblr-font-sans-serif: Inter,-apple-system,BlinkMacSystemFont,San Francisco,Segoe UI,Roboto,Helvetica Neue,sans-serif !important;
-      }
-    </style>
-    <!-- CSS files -->
-    <link href="./dist/css/tabler.min.css" rel="stylesheet"/>
-    <link href="./dist/css/tabler-flags.min.css" rel="stylesheet"/>
-    <link href="./dist/css/tabler-payments.min.css" rel="stylesheet"/>
-    <link href="./dist/css/tabler-vendors.min.css" rel="stylesheet"/>
-    <link href="./dist/css/demo.min.css" rel="stylesheet"/>
-  </head>
-  <body >
-    <div class="page">
-      <header class="navbar navbar-expand-md navbar-light d-print-none">
-        <div class="container-xl">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
-            <a href="./home.html">
-              <img src="./static/logo.svg" width="110" height="32" alt="Tabler" class="navbar-brand-image">
-            </a>
-          </h1>
-  
-        </div>
-      </header>
-      <div class="navbar-expand-md">
-        <div class="collapse navbar-collapse" id="navbar-menu">
-          <div class="navbar navbar-light">
-            <div class="container-xl">
-              <ul class="navbar-nav">
-                <li class="nav-item ">
-                  <a class="nav-link" href="./home.html" >
-                    <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="5 12 3 12 12 3 21 12 19 12" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
-                    </span>
-                    <span class="nav-link-title">
-                      Home
-                    </span>
-                  </a>
-                </li>
-                <li class="nav-item active dropdown">
-                  <a class="nav-link  dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
-                    <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-k" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <circle cx="12" cy="12" r="9"></circle>
-                        <path d="M10 8v8"></path>
-                        <path d="M14 8l-2.5 4l2.5 4"></path>
-                        <path d="M10 12h1.5"></path>
-                     </svg>                    </span>
-                    <span class="nav-link-title">
-                      kaspa
-                    </span>
-                  </a>
-                  <div class="dropdown-menu">
-                    <div class="dropdown-menu-columns">
-                      <!--左边一竖行-->
-                      <div class="dropdown-menu-column">
-                        <a class="dropdown-item " href="./kaspa-zhuye.html">
-                          主页及相关链接
-                        </a>
-                        <a class="dropdown-item active " href="./kaspa-mining.html">
-                          开始挖矿
-                        </a>
-                      </div>
-                      <!--右边一竖行-->
-                      <div class="dropdown-menu-column">
-                        <a class="dropdown-item" href="./kaspa-jiage.html">
-                          <!-- Download SVG icon from http://tabler-icons.io/i/pie-chart -->
-                          实时价格监控
-                        </a>
-                        
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
-                    <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-3" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <circle cx="12" cy="12" r="9"></circle>
-                        <path d="M10 9a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1"></path>
-                      </svg>
-                    </span>
-                    <span class="nav-link-title">
-                      P3D
-                    </span>
-                  </a>
-                  <div class="dropdown-menu">
-                    <div class="dropdown-menu-columns">
-                      
-                      <div class="dropdown-menu-column">
-                        <a class="dropdown-item active" href="./empty.html">
-                          主页及相关链接
-                        </a>
-                        
-                        <div class="dropend">
-                          
-                        </div>
-                        
-                      </div>
-                      <div class="dropdown-menu-column">
 
-                        <a class="dropdown-item" href="./pagination.html">
-                          <!-- Download SVG icon from http://tabler-icons.io/i/pie-chart -->
-                          实时价格
-                        </a>
-                        
-                        
-                        <div class="dropend">
-                          
-                        </div>
-                        <div class="dropend">
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
-                    <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-compass" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
-                        <circle cx="12" cy="12" r="9"></circle>
-                        <line x1="12" y1="3" x2="12" y2="5"></line>
-                        <line x1="12" y1="19" x2="12" y2="21"></line>
-                        <line x1="3" y1="12" x2="5" y2="12"></line>
-                        <line x1="19" y1="12" x2="21" y2="12"></line>
-                      </svg>
-                    </span>
-                    <span class="nav-link-title">
-                      观察区
-                    </span>
-                  </a>
-                  <div class="dropdown-menu">
-                    <div class="dropdown-menu-columns">
-                      <div class="dropdown-menu-column">
-                        <a class="dropdown-item active" href="./empty.html">
-                          Empty page
-                        </a>
-                        <a class="dropdown-item" href="./accordion.html">
-                          Accordion
-                        </a>
-                        <a class="dropdown-item" href="./blank.html">
-                          Blank page
-                        </a>
-                        <a class="dropdown-item" href="./buttons.html">
-                          Buttons
-                        </a>
-                        <div class="dropend">
-                          <a class="dropdown-item dropdown-toggle" href="#sidebar-cards" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
-                            Cards
-                            <span class="badge badge-sm bg-green text-uppercase ms-2">New</span>
-                          </a>
-                          <div class="dropdown-menu">
-                            <a href="./cards.html" class="dropdown-item">
-                              Sample cards
-                            </a>
-                            <a href="./card-actions.html" class="dropdown-item">
-                              Card actions
-                              <span class="badge badge-sm bg-green text-uppercase ms-2">New</span>
-                            </a>
-                            <a href="./cards-masonry.html" class="dropdown-item">
-                              Cards Masonry
-                            </a>
-                          </div>
-                        </div>
-                        <a class="dropdown-item" href="./colors.html">
-                          Colors
-                        </a>
-                        <a class="dropdown-item" href="./datagrid.html">
-                          Data grid
-                          <span class="badge badge-sm bg-green text-uppercase ms-2">New</span>
-                        </a>
-                        <a class="dropdown-item" href="./datatables.html">
-                          Datatables
-                          <span class="badge badge-sm bg-green text-uppercase ms-2">New</span>
-                        </a>
-                        <a class="dropdown-item" href="./dropdowns.html">
-                          Dropdowns
-                        </a>
-                        <a class="dropdown-item" href="./modals.html">
-                          Modals
-                        </a>
-                        <a class="dropdown-item" href="./maps.html">
-                          Maps
-                        </a>
-                        <a class="dropdown-item" href="./map-fullsize.html">
-                          Map fullsize
-                        </a>
-                        <a class="dropdown-item" href="./maps-vector.html">
-                          Vector maps
-                          <span class="badge badge-sm bg-green text-uppercase ms-2">New</span>
-                        </a>
-                        <a class="dropdown-item" href="./navigation.html">
-                          Navigation
-                        </a>
-                        <a class="dropdown-item" href="./charts.html">
-                          Charts
-                        </a>
-                      </div>
-                      <div class="dropdown-menu-column">
-                        <a class="dropdown-item" href="./pagination.html">
-                          <!-- Download SVG icon from http://tabler-icons.io/i/pie-chart -->
-                          Pagination
-                        </a>
-                        <a class="dropdown-item" href="./placeholder.html">
-                          Placeholder
-                        </a>
-                        <a class="dropdown-item" href="./tabs.html">
-                          Tabs
-                        </a>
-                        <a class="dropdown-item" href="./tables.html">
-                          Tables
-                        </a>
-                        <a class="dropdown-item" href="./carousel.html">
-                          Carousel
-                          <span class="badge badge-sm bg-green text-uppercase ms-2">New</span>
-                        </a>
-                        <a class="dropdown-item" href="./lists.html">
-                          Lists
-                        </a>
-                        <a class="dropdown-item" href="./typography.html">
-                          Typography
-                        </a>
-                        <a class="dropdown-item" href="./offcanvas.html">
-                          Offcanvas
-                        </a>
-                        <a class="dropdown-item" href="./markdown.html">
-                          Markdown
-                        </a>
-                        <a class="dropdown-item" href="./dropzone.html">
-                          Dropzone
-                          <span class="badge badge-sm bg-green text-uppercase ms-2">New</span>
-                        </a>
-                        <a class="dropdown-item" href="./lightbox.html">
-                          Lightbox
-                          <span class="badge badge-sm bg-green text-uppercase ms-2">New</span>
-                        </a>
-                        <a class="dropdown-item" href="./tinymce.html">
-                          TinyMCE
-                          <span class="badge badge-sm bg-green text-uppercase ms-2">New</span>
-                        </a>
-                        <a class="dropdown-item" href="./inline-player.html">
-                          Inline player
-                          <span class="badge badge-sm bg-green text-uppercase ms-2">New</span>
-                        </a>
-                        <div class="dropend">
-                          <a class="dropdown-item dropdown-toggle" href="#sidebar-authentication" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
-                            Authentication
-                          </a>
-                          <div class="dropdown-menu">
-                            <a href="./sign-in.html" class="dropdown-item">
-                              Sign in
-                            </a>
-                            <a href="./sign-up.html" class="dropdown-item">
-                              Sign up
-                            </a>
-                            <a href="./forgot-password.html" class="dropdown-item">
-                              Forgot password
-                            </a>
-                            <a href="./terms-of-service.html" class="dropdown-item">
-                              Terms of service
-                            </a>
-                            <a href="./auth-lock.html" class="dropdown-item">
-                              Lock screen
-                            </a>
-                          </div>
-                        </div>
-                        <div class="dropend">
-                          <a class="dropdown-item dropdown-toggle" href="#sidebar-error" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
-                            <!-- Download SVG icon from http://tabler-icons.io/i/file-minus -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-inline me-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><line x1="9" y1="14" x2="15" y2="14" /></svg>
-                            Error pages
-                          </a>
-                          <div class="dropdown-menu">
-                            <a href="./error-404.html" class="dropdown-item">
-                              404 page
-                            </a>
-                            <a href="./error-500.html" class="dropdown-item">
-                              500 page
-                            </a>
-                            <a href="./error-maintenance.html" class="dropdown-item">
-                              Maintenance page
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                
-                
-                
-                
-              </ul>
-              <div class="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last">
-                <form action="." method="get">
-                  <div class="input-icon">
-                    <span class="input-icon-addon">
-                      <!-- Download SVG icon from http://tabler-icons.io/i/search -->
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="10" cy="10" r="7" /><line x1="21" y1="21" x2="15" y2="15" /></svg>
-                    </span>
-                    <input type="text" value="" class="form-control" placeholder="Search…" aria-label="Search in website">
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=0.8, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+  <title>home-cnprospecting</title>
+
+  <style>
+    @import url('https://rsms.me/inter/inter.css');
+
+    :root {
+      --tblr-font-sans-serif: Inter, -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif !important;
+    }
+  </style>
+  <!-- CSS files -->
+  <link href="./dist/css/tabler.min.css" rel="stylesheet" />
+  <link href="./dist/css/tabler-flags.min.css" rel="stylesheet" />
+  <link href="./dist/css/tabler-payments.min.css" rel="stylesheet" />
+  <link href="./dist/css/tabler-vendors.min.css" rel="stylesheet" />
+  <link href="./dist/css/demo.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="page">
+    <header class="navbar navbar-expand-md navbar-light d-print-none">
+      <div class="container-xl">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
+          <a href="./home.html">
+            <img src="./static/logo.svg" width="110" height="32" alt="Tabler" class="navbar-brand-image">
+          </a>
+        </h1>
+
       </div>
-      <div class="page-wrapper">
-        <div class="container-xl">
-          <!-- Page title -->
-          <div class="page-header d-print-none">
-            <div class="row g-2 align-items-center">
-              <div class="col">
-                <h2 class="page-title">
-                  <div class="row row-cards">
-                    <div class="col-lg-8">
-                      <div class="card">
-                        <div class="table-responsive">
-                          <table class="table table-vcenter card-table">
-                            <thead>
-                              <tr>
-                                <th>Name</th>
-                                <th>Title</th>
-                                <th>Email</th>
-                                <th>Role</th>
-                                <th class="w-1"></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Paweł Kuna</td>
-                                <td class="text-muted">
-                                  UI Designer, Training
-                                </td>
-                                <td class="text-muted"><a href="#" class="text-reset">paweluna@howstuffworks.com</a></td>
-                                <td class="text-muted">
-                                  User
-                                </td>
-                                <td>
-                                  <a href="#">Edit</a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Jeffie Lewzey</td>
-                                <td class="text-muted">
-                                  Chemical Engineer, Support
-                                </td>
-                                <td class="text-muted"><a href="#" class="text-reset">jlewzey1@seesaa.net</a></td>
-                                <td class="text-muted">
-                                  Admin
-                                </td>
-                                <td>
-                                  <a href="#">Edit</a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Mallory Hulme</td>
-                                <td class="text-muted">
-                                  Geologist IV, Support
-                                </td>
-                                <td class="text-muted"><a href="#" class="text-reset">mhulme2@domainmarket.com</a></td>
-                                <td class="text-muted">
-                                  User
-                                </td>
-                                <td>
-                                  <a href="#">Edit</a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Dunn Slane</td>
-                                <td class="text-muted">
-                                  Research Nurse, Sales
-                                </td>
-                                <td class="text-muted"><a href="#" class="text-reset">dslane3@epa.gov</a></td>
-                                <td class="text-muted">
-                                  Owner
-                                </td>
-                                <td>
-                                  <a href="#">Edit</a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Emmy Levet</td>
-                                <td class="text-muted">
-                                  VP Product Management, Accounting
-                                </td>
-                                <td class="text-muted"><a href="#" class="text-reset">elevet4@senate.gov</a></td>
-                                <td class="text-muted">
-                                  Admin
-                                </td>
-                                <td>
-                                  <a href="#">Edit</a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Maryjo Lebarree</td>
-                                <td class="text-muted">
-                                  Civil Engineer, Product Management
-                                </td>
-                                <td class="text-muted"><a href="#" class="text-reset">mlebarree5@unc.edu</a></td>
-                                <td class="text-muted">
-                                  User
-                                </td>
-                                <td>
-                                  <a href="#">Edit</a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Egan Poetz</td>
-                                <td class="text-muted">
-                                  Research Nurse, Engineering
-                                </td>
-                                <td class="text-muted"><a href="#" class="text-reset">epoetz6@free.fr</a></td>
-                                <td class="text-muted">
-                                  Admin
-                                </td>
-                                <td>
-                                  <a href="#">Edit</a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Kellie Skingley</td>
-                                <td class="text-muted">
-                                  Teacher, Services
-                                </td>
-                                <td class="text-muted"><a href="#" class="text-reset">kskingley7@columbia.edu</a></td>
-                                <td class="text-muted">
-                                  Owner
-                                </td>
-                                <td>
-                                  <a href="#">Edit</a>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
+    </header>
+    <div class="navbar-expand-md">
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <div class="navbar navbar-light">
+          <div class="container-xl">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link" href="./home.html">
+                  <span class="nav-link-icon d-md-none d-lg-inline-block">
+                    <!-- Download SVG icon from http://tabler-icons.io/i/home -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
+                      stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                      <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                      <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                    </svg>
+                  </span>
+                  <span class="nav-link-title">
+                    Home
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside" role="button" aria-expanded="false">
+                  <span class="nav-link-icon d-md-none d-lg-inline-block">
+                    <!-- Download SVG icon from http://tabler-icons.io/i/package -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-k" width="24"
+                      height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <circle cx="12" cy="12" r="9"></circle>
+                      <path d="M10 8v8"></path>
+                      <path d="M14 8l-2.5 4l2.5 4"></path>
+                      <path d="M10 12h1.5"></path>
+                    </svg>
+                  </span>
+                  <span class="nav-link-title">
+                    kaspa
+                  </span>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu-columns">
+                    <!--左边一竖行-->
+                    <div class="dropdown-menu-column">
+                      <a class="dropdown-item" href="./kaspa-zhuye.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-armchair-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M5 10v-4a3 3 0 0 1 3 -3h8a3 3 0 0 1 3 3v4"></path>
+                          <path d="M16 15v-2a3 3 0 1 1 3 3v3h-14v-3a3 3 0 1 1 3 -3v2"></path>
+                          <path d="M8 12h8"></path>
+                          <path d="M7 19v2"></path>
+                          <path d="M17 19v2"></path>
+                       </svg>
+                        · 主页及相关链接
+                      </a>
+                      <a class="dropdown-item active" href="./kaspa-mining.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M6 5h12l3 5l-8.5 9.5a0.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5"></path>
+                          <path d="M10 12l-2 -2.2l.6 -1"></path>
+                       </svg>
+                        · 开始挖矿
+                      </a>
+                    </div>
+                    <!--右边一竖行-->
+                    <div class="dropdown-menu-column">
+                      <a class="dropdown-item" href="./kaspa-jiage.html">
+                        <!-- Download SVG icon from http://tabler-icons.io/i/pie-chart -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dashboard" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <circle cx="12" cy="13" r="2"></circle>
+                          <line x1="13.45" y1="11.55" x2="15.5" y2="9.5"></line>
+                          <path d="M6.4 20a9 9 0 1 1 11.2 0z"></path>
+                       </svg>
+                       · 实时价格监控
+                      </a>
+                      <a class="dropdown-item" href="./kaspa-jianchanbiao.html">
+                        <!-- Download SVG icon from http://tabler-icons.io/i/pie-chart -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4"></path>
+                          <circle cx="18" cy="18" r="4"></circle>
+                          <path d="M15 3v4"></path>
+                          <path d="M7 3v4"></path>
+                          <path d="M3 11h16"></path>
+                          <path d="M18 16.496v1.504l1 1"></path>
+                       </svg>
+                        · 减产表
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside" role="button" aria-expanded="false">
+                  <span class="nav-link-icon d-md-none d-lg-inline-block">
+                    <!-- Download SVG icon from http://tabler-icons.io/i/package -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-3" width="24"
+                      height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <circle cx="12" cy="12" r="9"></circle>
+                      <path
+                        d="M10 9a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1">
+                      </path>
+                    </svg>
+                  </span>
+                  <span class="nav-link-title">
+                    P3D
+                  </span>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu-columns">
+
+                    <div class="dropdown-menu-column">
+                      <a class="dropdown-item " href="./P3D.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-armchair-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M5 10v-4a3 3 0 0 1 3 -3h8a3 3 0 0 1 3 3v4"></path>
+                          <path d="M16 15v-2a3 3 0 1 1 3 3v3h-14v-3a3 3 0 1 1 3 -3v2"></path>
+                          <path d="M8 12h8"></path>
+                          <path d="M7 19v2"></path>
+                          <path d="M17 19v2"></path>
+                       </svg>
+                        · 主页及相关链接
+                      </a>
+
+                      <div class="dropend">
+
+                      </div>
+
+                    </div>
+                    <div class="dropdown-menu-column">
+
+                      <a class="dropdown-item" href="./P3D.html">
+                        <!-- Download SVG icon from http://tabler-icons.io/i/pie-chart -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dashboard" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <circle cx="12" cy="13" r="2"></circle>
+                          <line x1="13.45" y1="11.55" x2="15.5" y2="9.5"></line>
+                          <path d="M6.4 20a9 9 0 1 1 11.2 0z"></path>
+                       </svg>
+                       · 价格快来了！
+                      </a>
+
+
+                      <div class="dropend">
+
+                      </div>
+                      <div class="dropend">
+
                       </div>
                     </div>
-
                   </div>
-                </h2>
-              </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside" role="button" aria-expanded="false">
+                  <span class="nav-link-icon d-md-none d-lg-inline-block">
+                    <!-- Download SVG icon from http://tabler-icons.io/i/package -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-compass" width="24"
+                      height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
+                      <circle cx="12" cy="12" r="9"></circle>
+                      <line x1="12" y1="3" x2="12" y2="5"></line>
+                      <line x1="12" y1="19" x2="12" y2="21"></line>
+                      <line x1="3" y1="12" x2="5" y2="12"></line>
+                      <line x1="19" y1="12" x2="21" y2="12"></line>
+                    </svg>
+                  </span>
+                  <span class="nav-link-title">
+                    观察区
+                  </span>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu-columns">
+                   
+                    <div class="dropend">
+                      <a class="dropdown-item dropdown-toggle" href="#sidebar-cards" data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside" role="button" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-paw" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M14.7 13.5c-1.1 -1.996 -1.441 -2.5 -2.7 -2.5c-1.259 0 -1.736 .755 -2.836 2.747c-.942 1.703 -2.846 1.845 -3.321 3.291c-.097 .265 -.145 .677 -.143 .962c0 1.176 .787 2 1.8 2c1.259 0 3.004 -1 4.5 -1s3.241 1 4.5 1c1.013 0 1.8 -.823 1.8 -2c0 -.285 -.049 -.697 -.146 -.962c-.475 -1.451 -2.512 -1.835 -3.454 -3.538z"></path>
+                          <path d="M20.188 8.082a1.039 1.039 0 0 0 -.406 -.082h-.015c-.735 .012 -1.56 .75 -1.993 1.866c-.519 1.335 -.28 2.7 .538 3.052c.129 .055 .267 .082 .406 .082c.739 0 1.575 -.742 2.011 -1.866c.516 -1.335 .273 -2.7 -.54 -3.052z"></path>
+                          <path d="M9.474 9c.055 0 .109 -.004 .163 -.011c.944 -.128 1.533 -1.346 1.32 -2.722c-.203 -1.297 -1.047 -2.267 -1.932 -2.267c-.055 0 -.109 .004 -.163 .011c-.944 .128 -1.533 1.346 -1.32 2.722c.204 1.293 1.048 2.267 1.933 2.267z"></path>
+                          <path d="M16.456 6.733c.214 -1.376 -.375 -2.594 -1.32 -2.722a1.164 1.164 0 0 0 -.162 -.011c-.885 0 -1.728 .97 -1.93 2.267c-.214 1.376 .375 2.594 1.32 2.722c.054 .007 .108 .011 .162 .011c.885 0 1.73 -.974 1.93 -2.267z"></path>
+                          <path d="M5.69 12.918c.816 -.352 1.054 -1.719 .536 -3.052c-.436 -1.124 -1.271 -1.866 -2.009 -1.866c-.14 0 -.277 .027 -.407 .082c-.816 .352 -1.054 1.719 -.536 3.052c.436 1.124 1.271 1.866 2.009 1.866c.14 0 .277 -.027 .407 -.082z"></path>
+                       </svg>· meowcoin
+                      </a>
+                      <div class="dropdown-menu">
+                        <a href="./meowcoin.html" class="dropdown-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-armchair-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M5 10v-4a3 3 0 0 1 3 -3h8a3 3 0 0 1 3 3v4"></path>
+                            <path d="M16 15v-2a3 3 0 1 1 3 3v3h-14v-3a3 3 0 1 1 3 -3v2"></path>
+                            <path d="M8 12h8"></path>
+                            <path d="M7 19v2"></path>
+                            <path d="M17 19v2"></path>
+                         </svg>
+                          · 主页及相关链接
+                        </a>
+                        <a href="./meowcoin-mining.html" class="dropdown-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M6 5h12l3 5l-8.5 9.5a0.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5"></path>
+                            <path d="M10 12l-2 -2.2l.6 -1"></path>
+                         </svg>
+                          · 开始挖矿
+                        </a>
+                        <a href="./meowcoin-jiaoyi.html" class="dropdown-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dashboard" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="12" cy="13" r="2"></circle>
+                            <line x1="13.45" y1="11.55" x2="15.5" y2="9.5"></line>
+                            <path d="M6.4 20a9 9 0 1 1 11.2 0z"></path>
+                         </svg>
+                         · 实时价格监控
+                        </a>
+                      </div>
+                    </div>
+                    <div class="dropdown-menu-column">
+                      <a class="dropdown-item" href="#">
+                        <!-- Download SVG icon from http://tabler-icons.io/i/pie-chart -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-thumb-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M7 11v8a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-7a1 1 0 0 1 1 -1h3a4 4 0 0 0 4 -4v-1a2 2 0 0 1 4 0v5h3a2 2 0 0 1 2 2l-1 5a2 3 0 0 1 -2 2h-7a3 3 0 0 1 -3 -3"></path>
+                       </svg>
+                        · 下一个快来了！
+                      </a>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+            </ul>
+            <div class="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last">
+              <form action="." method="get">
+                <div class="input-icon">
+                  <span class="input-icon-addon">
+                    <!-- Download SVG icon from http://tabler-icons.io/i/search -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
+                      stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <circle cx="10" cy="10" r="7" />
+                      <line x1="21" y1="21" x2="15" y2="15" />
+                    </svg>
+                  </span>
+                  <input type="text" value="" class="form-control" placeholder="施工中，暂时没有这个功能哦…"
+                    aria-label="Search in website">
+                </div>
+              </form>
             </div>
           </div>
         </div>
-        <div class="page-body">
-          <div class="container-xl">
-            <!-- Content here -->
-          </div>
-        </div>
-        <footer class="footer footer-transparent d-print-none">
-          <div class="container-xl">
-            <div class="row text-center align-items-center flex-row-reverse">
-              <div class="col-lg-auto ms-lg-auto">
-                
-              </div>
-              <div class="col-12 col-lg-auto mt-3 mt-lg-0">
-                <ul class="list-inline list-inline-dots mb-0">
-                  <li class="list-inline-item">
-                    Copyright &copy; 2022
-                    <a href="." class="link-secondary">Tabler</a>.
-                    All rights reserved. | Make By Neuer
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="./changelog.html" class="link-secondary" rel="noopener">
-                      v1.0.0-beta11
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
     </div>
-    <!-- Libs JS -->
-    <!-- Tabler Core -->
-    <script src="./dist/js/tabler.min.js" defer></script>
-    <script src="./dist/js/demo.min.js" defer></script>
-  </body>
+    <div class="page-wrapper">
+      <div class="container-xl">
+        <!-- Page title -->
+        <div class="page-header d-print-none">
+          <div class="row g-2 align-items-center">
+            <div class="col">
+              <h2 class="page-title">
+                <div class="row row-cards">
+                  <div class="col-md-8 markdown">
+                    <h1>kaspa池</h1>
+                    <div class="card">
+                      <div class="table-responsive">
+                        <table class="table table-vcenter card-table">
+                          <thead>
+                            <tr>
+                              <th>矿池(点击跳转)</th>
+                              <th>挖掘地址</th>
+                              <th>个人自建中转地址(0.5%)</th>
+                              <th>PPLNS/SOLO</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+
+                              <td>
+                                <a href="https://woolypooly.com/">
+                                  <img src="./static/ziyuan/woolypooly.png" alt="">
+                                </a>
+
+                              </td>
+
+
+                              <td class="text-muted">
+                                pool.woolypooly.com:3112
+                              </td>
+                              <td class="text-muted">www.cnprospecting.net:2100</td>
+                              <td class="text-muted">
+                                PPLNS 0.9%
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="https://woolypooly.com/">
+                                  <img src="./static/ziyuan/woolypooly.png" alt="">
+                                </a>
+
+                              </td>
+                              <td class="text-muted">
+                                pool.woolypooly.com:3113
+                              </td>
+                              <td class="text-muted">www.cnprospecting.net:2101</td>
+                              <td class="text-muted">
+                                SOLO 0.9%
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="https://kaspa.acc-pool.pw/">
+                                  <img src="./static/ziyuan/kaspapool.png" alt="">
+                                </a>
+
+                              </td>
+                              <td class="text-muted">
+                                hk.acc-pool.pw:16061
+                              </td>
+                              <td class="text-muted">www.cnprospecting.net:2110</td>
+                              <td class="text-muted">
+                                PPLNS 0.8%
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="https://solo.kaspa.acc-pool.pw/">
+                                  <img src="./static/ziyuan/kaspapool.png" alt="">
+                                </a>
+
+                              </td>
+                              <td class="text-muted">
+                                hk.acc-pool.pw:16064
+                              </td>
+                              <td class="text-muted">www.cnprospecting.net:2111</td>
+                              <td class="text-muted">
+                                SOLO 0.8%
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="https://hashpool.com/">
+                                  <img src="./static/ziyuan/Hashpool.png" alt="">
+                                </a>
+
+                              </td>
+                              <td class="text-muted">
+                                kas.stratum.hashpool.site:8877
+                              </td>
+                              <td class="text-muted">www.cnprospecting.net:2120</td>
+                              <td class="text-muted">
+                                PPLNS 0.8%
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="https://kaspa-pool.org/">
+                                  <img src="./static/ziyuan/kaspa-pool.png" alt="">
+                                </a>
+
+                              </td>
+                              <td class="text-muted">
+                                kaspa-pool.org:4444
+                              </td>
+                              <td class="text-muted">www.cnprospecting.net:2130</td>
+                              <td class="text-muted">
+                                PPLNS 0.8%
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="col-md-4 markdown" style="margin-top: 55px;">
+                    <div> <a class="minerstat-widget" title="KAS mining calculator" data-coin="KAS" data-algo="KHeavyHash"
+                      data-info="yes" data-style="light" data-color="" data-unit="MH" data-hashrate="100"
+                      data-width="400" rel="nofollow" href="https://minerstat.com/coin/KAS">KAS mining calculator</a>
+                    </div>
+                    
+                    
+
+                  </div>
+                  
+
+                  <div class="col-md-8 markdown">
+                    <h1>双挖币池</h1>
+                    <div class="card">
+                      <div class="table-responsive">
+                        <table class="table table-vcenter card-table">
+                          <thead>
+                            <tr>
+                              <th>矿池(点击跳转)</th>
+                              <th>挖掘地址</th>
+                              <th>个人自建中转地址(0.5%)</th>
+                              <th>PPLNS/SOLO</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+
+                              <td>
+                                <a class="crypto-currency-title" href="https://erg.2miners.com/"><img
+                                    class="logo-light-theme" src="https://static-d.2miners.com/img/coins/ergo_light.svg"
+                                    width="32" height="32" alt=""><span style="font-size:15px;"> 2MINERS.COM</span></a>
+
+                              </td>
+
+
+                              <td class="text-muted">
+                                asia-erg.2miners.com:8888
+                              </td>
+                              <td class="text-muted">www.cnprospecting.net:2200</td>
+                              <td class="text-muted">
+                                PPLNS 1%
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a class="crypto-currency-title" href="https://etc.2miners.com/"><img class="logo-light-theme"
+                                    src="https://static-d.2miners.com/img/coins/ethereum-classic_light.svg" width="32"
+                                    height="32" alt=""><img class="logo-dark-theme">
+                                    <span style="font-size:15px;">2MINERS.COM</span>
+                                  </span>
+                                </a>
+
+                              </td>
+                              <td class="text-muted">
+                                asia-etc.2miners.com:1010
+                              </td>
+                              <td class="text-muted">www.cnprospecting.net:2101</td>
+                              <td class="text-muted">
+                                PPLNS 1%
+                              </td>
+                            </tr>
+                            
+                              
+                          </tbody>
+                        </table>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+      <div class="page-body">
+        <div class="container-xl">
+          <!-- Content here -->
+        </div>
+      </div>
+      <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+          <div class="row text-center align-items-center flex-row-reverse">
+            <div class="col-lg-auto ms-lg-auto">
+
+            </div>
+            <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+              <ul class="list-inline list-inline-dots mb-0">
+                <li class="list-inline-item">
+                  Copyright &copy; 2022
+                  <a href="." class="link-secondary">Tabler</a>.
+                  All rights reserved. | Make By Neuer
+                </li>
+                <li class="list-inline-item">
+                  <a href="./changelog.html" class="link-secondary" rel="noopener">
+                    v1.0.0-beta11
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- Libs JS -->
+  <!-- Tabler Core -->
+  <script src="./dist/js/tabler.min.js" defer></script>
+  <script src="./dist/js/demo.min.js" defer></script>
+  <script async src="https://api.minerstat.com/v2/widgets/coin.js" charset="utf-8"></script>
+</body>
+
 </html>
