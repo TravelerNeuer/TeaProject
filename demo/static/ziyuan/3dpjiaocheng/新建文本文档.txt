@@ -1,0 +1,30 @@
+sudo su
+卡住了按一下回车
+apt update
+apt install -y git
+apt install -y curl
+apt install -y wget
+git clone https://github.com/3Dpass/3DP.git
+cd 3DP/
+curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain nightly
+source $HOME/.cargo/env
+rustup update nightly
+rustup target add wasm32-unknown-unknown --toolchain nightly
+apt-get install -y libclang-dev libssl-dev clang
+apt install -y libprotobuf-dev protobuf-compiler
+apt-get install -y make
+wget https://github.com/3Dpass/3DP/releases/download/v0.0.6/poscan-consensus-x86_64-unknown-linux-gnu.tar.gz
+tar xzf poscan-consensus-x86_64-unknown-linux-gnu.tar.gz
+
+./poscan-consensus generate-mining-key --base-path ~/3dp-chain/ --chain mainnetSpecRaw.json
+./poscan-consensus import-mining-key 'your secret seed phrase' --base-path ~/3dp-chain/ --chain mainnetSpecRaw.json
+./poscan-consensus key inspect --password-interactive --scheme Ed25519 "your secret seed phrase"
+./poscan-consensus key insert --base-path ~/3dp-chain/ --chain mainnetSpecRaw.json --scheme Ed25519 --suri 0x433e3d739172243686f442ab3b2ac784adf58760e4b92f3ab18d7b5ee7c66989 --key-type gran
+ls ~/3dp-chain/chains/3dpass/keystore
+./poscan-consensus --base-path ~/3dp-chain/ --chain mainnetSpecRaw.json --name NodeName --validator --telemetry-url "wss://submit.telemetry.3dpass.org/submit 0" --author 0xe44fc084c280f9bc857362dad4a5d8f563008c3010cafb57a6d61cb19006c553 --threads 2 --no-mdns
+
+
+
+
+
+
